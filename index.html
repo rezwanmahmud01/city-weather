@@ -1,72 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/weather-icon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/weather-icon.png"
+      type="image/x-icon"
+    />
     <title>City Weather</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/7ffe459676.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/7ffe459676.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        body {
-            height: 100%;
-            margin: 0;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-image: linear-gradient(rgb(0, 109, 128), rgb(106, 106, 139));
-        }
+      body {
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: linear-gradient(rgb(0, 109, 128), rgb(106, 106, 139));
+      }
 
-        .container-height {
-            height: 100px;
-        }
+      .container-height {
+        height: 100px;
+      }
 
-        .icon-size {
-            font-size: 3rem;
-        }
+      .icon-size {
+        font-size: 3rem;
+      }
 
-        #footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            /* height: 60px; */
-            /* Height of the footer */
-            /* background: #6cf; */
-        }
+      #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* height: 60px; */
+        /* Height of the footer */
+        /* background: #6cf; */
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- <h1 class="text-center text-info mt-3">Wellcome to Weather Update</h1> -->
     <div class="text-center mt-2">
-        <img class="rounded" height="150" src="images/tree-1611056_640.jpg" alt="">
+      <img
+        class="rounded"
+        height="150"
+        src="images/tree-1611056_640.jpg"
+        alt=""
+      />
     </div>
 
     <div class="input-group mb-3 w-50 mx-auto mt-2">
-        <input id="input-field" type="search" class="form-control" placeholder="Enter City Name">
+      <input
+        id="input-field"
+        type="search"
+        class="form-control"
+        placeholder="Enter City Name"
+      />
 
-        <button onclick="loadData()" id="input-button" type="submit" class="btn btn-warning">
-            Search
-        </button>
+      <button
+        onclick="loadData()"
+        id="input-button"
+        type="submit"
+        class="btn btn-warning"
+      >
+        Search
+      </button>
     </div>
 
     <div class="text-center">
-        <span><i class="fas fa-cloud icon-size text-info"></i></span>
+      <span><i class="fas fa-cloud icon-size text-info"></i></span>
     </div>
 
     <!-- weather display div  -->
-    <div id="div-container" class="container mx-auto mt-3">
-
-    </div>
-
+    <div id="div-container" class="container mx-auto mt-3"></div>
 
     <footer id="footer">
-        <p class="text-center text-white fs-6">Developed By Emdadullah</p>
+      <p class="text-center text-white fs-6">Developed By Rezwan</p>
     </footer>
 
     <script src="js/weather.js"></script>
-</body>
-
+  </body>
 </html>
